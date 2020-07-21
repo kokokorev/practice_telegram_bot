@@ -30,7 +30,6 @@ def _write_new_list(user_id, dict):
 
 def del_list(user_id, text):
     list_name = text[text.find(' ') + 1:]
-    data = {list_name: {}}
 
     if _delete_list(user_id, list_name):
         return True
